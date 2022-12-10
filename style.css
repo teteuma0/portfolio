@@ -1,0 +1,35 @@
+
+#div-coluna1{
+    width: 280px;
+    background-color: aqua;
+    height: 1000px;
+
+}
+
+h1{
+    font-size: 48.83px;
+}
+
+h2{
+    font-size: 25px;
+}
+
+h3{
+    font-size: 16px;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+.texto-branco{
+    color: white;
+}
+
+.texto-centro{
+    text-align: center;
+}
+
+.minha-foto{
+    width: 200px;
+}
