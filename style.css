@@ -1,9 +1,229 @@
 
-#div-coluna1{
-    width: 280px;
-    background-color: aqua;
-    height: 1000px;
+:root{
+    --main: #443850;
+    --shadow: 0 2px 15px -4px #808080ad;
+}
 
+
+
+
+/**
+
+        COLUNA 1
+*/
+
+#div-coluna1 {
+    width: 300px;
+    background-color: var(--main);
+    height: 100vh;
+    padding: 0 1rem;
+    position: fixed;
+    z-index: 100;
+    overflow-y: auto;
+}
+
+
+.minha-foto{
+    width: 200px;
+    margin: 2rem auto;
+    display: block;
+}
+
+.coluna1-titulo{
+    margin: 4rem 0 0 0;
+}
+
+.container-redes{
+    margin: 1rem 0;
+    display: flex;
+    justify-content: space-around;
+
+}
+
+.icone-rede{
+    width: 30px;
+ 
+}
+
+#coluna1-menu{
+    list-style: none;
+    margin-top: 2rem;
+}
+
+#coluna1-menu > li{
+    margin: 1rem 0;
+}
+
+#coluna1-menu > li > a{
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+#coluna1-menu > li > a > svg {
+    width: 15px;
+}
+
+/** 
+
+        FIM COLUNA 1
+
+        INICIO COLUNA 2
+*/
+
+#div-coluna2 {
+
+    
+}
+#div-coluna2 > div:first-of-type {
+    padding-top: 4rem;
+}
+
+#div-coluna2 > div {
+    margin-left: 300px;
+    padding: 0 4rem 0 4rem;
+}
+
+.bio-nome{
+    margin-top: 0;
+}
+
+#bio-cargo{
+    font-weight: 100;
+}
+
+#biografia {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fafafa ;
+}
+
+#biografia > div:first-of-type {
+    max-width: 70%;
+}
+
+#biografia > div:last-of-type {
+    min-width: 30%;
+}
+
+
+#bio-imagen > img{
+    width: 350px;
+    border-radius: 5px;
+}
+
+.bio-buttons{
+    margin-bottom: 4rem;
+}
+
+.bio-buttons > a{
+    padding: 10px ;
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+    background-color: var(--main);
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.subtitle {
+    font-size: 30px;
+    padding-left: 20px;
+    margin: 4rem 0 2rem 0;
+}
+
+.skill-itens-container{
+    display: flex;
+}
+
+.skill-item{
+    padding: 15px;
+    box-shadow: var(--shadow);
+    width: 250px;
+
+}
+
+.skill-descricao{
+    margin-bottom: 2rem;
+}
+
+
+.projeto-item{
+    display: block;
+    width: 300px;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+    overflow: hidden;
+    transition: all ease 300ms;
+}
+
+.projeto-item:hover{
+    transform: translate(3px, 3px);
+    box-shadow: none;
+    border: 1px solid rgb(187, 187, 187);
+}
+
+.projeto-imagem > img{
+    width: 300px;
+}
+
+.projeto-conteudo{
+    padding: 15px;
+}
+
+/*
+        HABILIDADES
+*/
+
+.skill-itens-container{
+    display: flex;
+}
+
+
+.skill-image-container > svg{
+    width: 30px;
+}
+
+/**
+    FIM COLUNA 2
+
+    INICIO FOOTER
+*/
+
+
+footer{
+    margin-top: 4rem;
+}
+
+.footer-main{
+    background-color: #fafafa;
+
+    margin-left: 300px;
+    height: 100px;
+}
+
+.footer-conteudo{
+    text-align: center;
+    padding-top: 65px;
+}
+
+
+
+
+
+
+
+
+
+.link{
+    color: #0311d0;
+}
+
+.divider{
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.61);
 }
 
 h1{
@@ -12,10 +232,16 @@ h1{
 
 h2{
     font-size: 25px;
+    font-weight: normal;
+}
+h3{
+    font-size: 22px;
+    font-weight: normal;
 }
 
-h3{
+h4{
     font-size: 16px;
+    font-weight: normal;
 }
 
 .negrito{
@@ -30,6 +256,43 @@ h3{
     text-align: center;
 }
 
-.minha-foto{
-    width: 200px;
+
+
+
+.badge::before{
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 100%;
+    background: var(--main);
+    position: absolute;
+    left: 0;
+    top: 0;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+#div-pai {
+    display: flex;
+}
+
+
+h1,h2,h3,h4, a {
+    font-family: 'Roboto', sans-serif;
+    margin: 1rem 0;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+* {
+    box-sizing: border-box;
+    position: relative;
 }
